@@ -1,0 +1,286 @@
+/* =====================
+   BASE STYLES
+   ===================== */
+
+body {
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+}
+
+/* =====================
+   TOP CONTAINER
+   ===================== */
+
+.top-container {
+    background-color: #e4f9f5;
+    position: relative;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+
+.title-text {
+    color: #40514e;
+    text-align: center;
+    margin: 0;
+}
+
+.h1 {
+    color: #66bfbf;
+    font-size: 6rem;
+    font-family: "Sacramento", cursive;
+}
+
+.mountain {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* =====================
+   MIDDLE CONTAINER
+   ===================== */
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.profile {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.h2 {
+    color: #66bfbf;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.h3 {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+/* =====================
+   SKILLS GRID
+   ===================== */
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    grid-row: 2rem;
+}
+
+.chili-image {
+    width: 50%;
+    margin: 30px;
+}
+
+/* =====================
+   CONTACT SECTION
+   ===================== */
+
+.contact-me {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.btn {
+    background-color: #11cdd4;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+
+.bottom-container {
+    background-color: #66bfbf;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+}
+
+.copywrite {
+    color: white;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+/* =====================
+   RESPONSIVE — TABLET
+   max-width: 1024px
+   ===================== */
+
+@media (max-width: 1024px) {
+    .top-cloud {
+        right: 100px;
+        width: 120px;
+    }
+
+    .bottom-cloud {
+        left: 80px;
+        width: 120px;
+    }
+
+    .intro {
+        width: 60%;
+    }
+
+    .parent {
+        width: 75%;
+    }
+
+    .contact-me {
+        width: 60%;
+    }
+}
+
+/* =====================
+   RESPONSIVE — MOBILE
+   max-width: 768px
+   ===================== */
+
+@media (max-width: 768px) {
+
+    /* Clouds scale down and reposition */
+    .top-cloud {
+        right: 10px;
+        top: 15px;
+        width: 80px;
+    }
+
+    .bottom-cloud {
+        left: 10px;
+        bottom: 100px;
+        width: 80px;
+    }
+
+    /* Title */
+    .title-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .title-text h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Middle section */
+    .middle-container {
+        margin: 60px 20px;
+    }
+
+    .intro {
+        width: 85%;
+    }
+
+    /* Skills grid → single column */
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 40px auto 0 auto;
+        text-align: center;
+    }
+
+    .typing img {
+        width: 140px;
+    }
+
+    .chili-image {
+        width: 40%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .coding,
+    .hot {
+        padding: 0 10px;
+    }
+
+    /* Contact */
+    .contact-me {
+        width: 80%;
+        margin: 30px auto 40px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    /* Footer links spacing */
+    .bottom-container a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+/* =====================
+   RESPONSIVE — SMALL MOBILE
+   max-width: 480px
+   ===================== */
+
+@media (max-width: 480px) {
+    .top-cloud,
+    .bottom-cloud {
+        display: none; /* hide clouds on very small screens to avoid clutter */
+    }
+
+    .title-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .title-text h2 {
+        font-size: 1rem;
+    }
+
+    .intro {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .parent {
+        width: 95%;
+    }
+
+    .contact-me {
+        width: 88%;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 9px 16px;
+    }
+}
